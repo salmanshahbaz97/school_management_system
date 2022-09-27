@@ -5,9 +5,9 @@ from .models import School, Student
 class SchoolSerializer(serializers.ModelSerializer):
     class Meta:
         model = School
-        fields = ['id', 'name', 'students_of_count']
+        fields = ['id', 'name', 'max_students', 'no_of_students']
 
-    students_of_count = serializers.IntegerField(read_only=True)
+    no_of_students = serializers.IntegerField(read_only=True)
 
 
 class StudentSerializer(serializers.ModelSerializer):

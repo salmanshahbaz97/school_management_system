@@ -5,8 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class School(models.Model):
     name = models.CharField(max_length=20)
-    # max_students = models.ForeignKey(
-    #     'Student', on_delete=models.SET_NULL, null=True, related_name='+', blank=True)
+    max_students = models.PositiveBigIntegerField(default=0)
 
     def __str__(self) -> str:
         return self.name

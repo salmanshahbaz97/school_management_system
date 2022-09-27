@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'school_management.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# for mysql database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -87,6 +88,16 @@ DATABASES = {
         'PASSWORD': 'salman.123'
     }
 }
+# for postgres database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'school_management_system_db',
+#         'USER': 'postgres',
+#         'PASSWORD': '11223344',
+#         'PORT': 5433
+#     }
+# }
 
 
 # Password validation 
