@@ -27,4 +27,4 @@ And navigate to `http://127.0.0.1:8000/management/`.
 
 ## TimeEstimation
 
-It will take me around three days to build all this functionality
+It takes me around three days to build all this functionality
