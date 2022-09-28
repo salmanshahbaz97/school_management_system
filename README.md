@@ -19,7 +19,7 @@ $ pipenv shell
 
 Then install the dependencies:
 
-Once `pipenv` has finished downloading the dependencies:
+Once `pipenv` has finished downloading the dependencies make sure to add your database user and password in school_management/settings/dev file:
 ```sh
 (env)$ python manage.py runserver
 ```
